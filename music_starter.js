@@ -43,7 +43,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
       let x3 = width / 1.6;
       let y3 = height / 1.6;
 
-      // Calculate the center of the triangle
+      //Center of triangle
       let centerX = (x1 + x2 + x3) / 3;
       let centerY = (y1 + y2 + y3) / 3;
 
@@ -90,7 +90,6 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
       }
       pop();
-
       push();
 
       //triangle vertises
@@ -113,9 +112,10 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
       strokeWeight(1 + drumextra);
       fill(10,10,10);
 
-      //Triangle
+      //Draw the real prism
       triangle(px1 - pcenterX, py1 - pcenterY, px2 - pcenterX, py2 - pcenterY, px3 - pcenterX, py3 - pcenterY);
       pop();
+
     //END LIGHT REFRACTION LAYER
 
     //BEGIN MOON LAYER
